@@ -17,8 +17,8 @@ public:
 	{
 		delete[] m_textures;		
 	}
-	Texture(Texture& texture) = delete;
-	Texture& operator=(Texture& texture) = delete;
+	Texture(const Texture& texture) = delete;
+	Texture& operator=(const Texture& texture) = delete;
 
 private:
 	int m_texSize{1};
